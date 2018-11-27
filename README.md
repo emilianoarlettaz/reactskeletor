@@ -17,7 +17,7 @@ Set the required NodeJS version:
 nvm install
 ```
 
-> - This assumes you have NVM installed on your computer, if not, you can [grab it from here](https://github.com/creationix/nvm#installation).
+> This assumes you have NVM installed on your computer, if not, you can [grab it from here](https://github.com/creationix/nvm#installation).
 
 Install the repository hooks:
 
