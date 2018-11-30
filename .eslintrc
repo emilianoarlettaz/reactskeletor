@@ -5,8 +5,9 @@
     "es6":     true,
     "browser": true,
     "node":    true,
-    "mocha":   true
+    "jest":    true
   },
   "rules": {
+    "import/no-extraneous-dependencies": "off"
   }
 }
