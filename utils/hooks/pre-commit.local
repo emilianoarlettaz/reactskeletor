@@ -1,3 +1,5 @@
 #!/bin/bash -e
 
 npm run lint:js
+npm run test:unit
+npm run test:snapshot
