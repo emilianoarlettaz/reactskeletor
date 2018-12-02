@@ -1,0 +1,5 @@
+{
+  "testRegex": "((\\.|/*.)(test|spec))\\.(js|jsx)?$",
+  "rootDir": "../..",
+  "setupTestFrameworkScriptFile": "<rootDir>test/setup/setupEnzyme.js"
+}

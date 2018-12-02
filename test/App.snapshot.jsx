@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import App, { Counter } from './App';
+import App, { Counter } from '../src/App';
 
 describe('App Snapshot', () => {
   const title = 'Testing App';
