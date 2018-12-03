@@ -43,7 +43,7 @@ To start the project with the default configuration on your local environment ru
 npm start
 ```
 
-Now, you can open the browser and visit ()[http://localhost:8080/]
+Now, you can open the browser and visit [][http://localhost:8080/]
 
 ### Running Unit and Integration tests:
 
@@ -70,4 +70,4 @@ If you want to run manually the Linter execute the following command:
 npm run lint:js:full
 ```
 
-This project follows (Airbnb JavaScript Style)[https://github.com/airbnb/javascript]
+This project follows [Airbnb JavaScript Style](https://github.com/airbnb/javascript)
