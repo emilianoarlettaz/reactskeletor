@@ -43,7 +43,7 @@ To start the project with the default configuration on your local environment ru
 npm start
 ```
 
-Now, you can open the browser and visit [](http://localhost:8080/)
+Now, you can open the browser and visit [http://localhost:8080/](http://localhost:8080/)
 
 ### Running Unit and Integration tests:
 
