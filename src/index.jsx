@@ -1,11 +1,14 @@
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
 import App from './App';
 
 const title = 'React Skeletor App';
 
 ReactDOM.render(
-  <App title={title} />,
+  <BrowserRouter>
+    <App title={title} />
+  </BrowserRouter>,
   document.getElementById('app'),
 );
 
