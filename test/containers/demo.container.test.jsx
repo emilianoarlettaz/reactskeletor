@@ -1,5 +1,6 @@
 import React from 'react';
-import Main, { doIncrement, doDecrement, Counter } from '../src/Main';
+import Demo, { doIncrement, doDecrement } from '../../src/containers/demo.container';
+import { Button, Counter } from '../../src/components';
 
 describe('Local State', () => {
   test('should increment the counter in state', () => {
@@ -17,17 +18,16 @@ describe('Local State', () => {
   });
 });
 
-describe('Main Component', () => {
-  const title = 'Testing App';
-
-  it('renders the Counter wrapper', () => {
-    const wrapper = shallow(<Main title={title} />);
+describe('Demo Container', () => {
+  test('renders the Counter wrapper', () => {
+    const wrapper = shallow(<Demo />);
 
     expect(wrapper.find(Counter).length).toEqual(1);
+    expect(wrapper.find(Button).length).toEqual(2);
   });
 
-  it('passes all props to Counter wrapper', () => {
-    const wrapper = shallow(<Main title={title} />);
+  test('passes all props to Counter wrapper', () => {
+    const wrapper = shallow(<Demo />);
     let counterWrapper = wrapper.find(Counter);
 
     expect(counterWrapper.props().counter).toEqual(0);
@@ -38,20 +38,20 @@ describe('Main Component', () => {
     expect(counterWrapper.props().counter).toEqual(-1);
   });
 
-  it('increments the counter', () => {
-    const wrapper = shallow(<Main title={title} />);
+  test('increments the counter', () => {
+    const wrapper = shallow(<Demo />);
 
     wrapper.setState({ counter: 0 });
-    wrapper.find('button').at(0).simulate('click');
+    wrapper.find('Button').at(0).simulate('click');
 
     expect(wrapper.state().counter).toEqual(1);
   });
 
-  it('decrements the counter', () => {
-    const wrapper = shallow(<Main title={title} />);
+  test('decrements the counter', () => {
+    const wrapper = shallow(<Demo />);
 
     wrapper.setState({ counter: 0 });
-    wrapper.find('button').at(1).simulate('click');
+    wrapper.find('Button').at(1).simulate('click');
 
     expect(wrapper.state().counter).toEqual(-1);
   });

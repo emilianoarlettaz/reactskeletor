@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Button, Counter } from '../components';
 
 export const doIncrement = prevState => ({
   counter: prevState.counter + 1,
@@ -9,7 +9,9 @@ export const doDecrement = prevState => ({
   counter: prevState.counter - 1,
 });
 
-class Main extends Component {
+const title = 'Counter Demo';
+
+class Demo extends Component {
   constructor() {
     super();
 
@@ -30,7 +32,6 @@ class Main extends Component {
   }
 
   render() {
-    const { title } = this.props;
     const { counter } = this.state;
 
     return (
@@ -38,32 +39,16 @@ class Main extends Component {
         <h1>{title}</h1>
         <Counter counter={counter} />
 
-        <button
-          type="button"
-          onClick={this.onIncrement}
-        >
+        <Button onClick={this.onIncrement}>
           Increment
-        </button>
+        </Button>
 
-        <button
-          type="button"
-          onClick={this.onDecrement}
-        >
+        <Button onClick={this.onDecrement}>
           Decrement
-        </button>
+        </Button>
       </div>
     );
   }
 }
 
-export const Counter = ({ counter }) => <p>{counter}</p>;
-
-Main.propTypes = {
-  title: PropTypes.string.isRequired,
-};
-
-Counter.propTypes = {
-  counter: PropTypes.number.isRequired,
-};
-
-export default Main;
+export default Demo;

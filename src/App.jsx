@@ -1,15 +1,12 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import Main from './Main';
+import { Main } from './containers';
+import { Header } from './components';
 
-const App = ({ title }) => (
+const App = () => (
   <div>
-    <Main title={title} />
+    <Header />
+    <Main />
   </div>
 );
-
-App.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default App;
