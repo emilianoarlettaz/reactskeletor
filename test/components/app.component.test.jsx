@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../src/App';
+import { App } from '../../src/components';
 
 describe('App Component', () => {
   test('renders the Main wrapper', () => {

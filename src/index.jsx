@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
-import App from './App';
+import { App } from './components';
 
 const title = 'React Skeletor App';
 
