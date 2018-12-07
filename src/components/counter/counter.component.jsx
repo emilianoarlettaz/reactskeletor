@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Counter = ({ counter }) => <p>{counter}</p>;
+const Counter = ({ counter }) => <h1>{counter}</h1>;
 
 Counter.propTypes = {
   counter: PropTypes.number.isRequired,

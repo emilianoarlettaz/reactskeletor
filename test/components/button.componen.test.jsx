@@ -15,7 +15,7 @@ describe('Button Component', () => {
 
     expect(wrapper.prop('onClick')).toEqual(onClick);
     expect(wrapper.prop('children')).toEqual(text);
-    expect(wrapper.prop('className')).toEqual(className);
+    expect(wrapper.prop('className')).toEqual(`button ${className}`);
   });
 
   test('Button has default className', () => {
@@ -27,6 +27,6 @@ describe('Button Component', () => {
       </Button>,
     );
 
-    expect(wrapper.prop('className')).toEqual('');
+    expect(wrapper.prop('className')).toEqual('button');
   });
 });

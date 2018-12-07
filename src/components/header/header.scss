@@ -1,0 +1,59 @@
+$header-background-color: #c3ccc6;
+$header-border-color: #919993;
+$header-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+
+$header-buttons-font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+$header-buttons-text-color: #3a423c;
+
+$header-asset-logo: './assets/skeletor_header_logo.png';
+
+.header {
+  background-color: $header-background-color;
+  border-bottom: 2px solid $header-border-color;
+  font-family: $header-font-family;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  & + div {
+    height: calc(100% - 60px);
+  }
+  &_logo {
+    background-image: url($header-asset-logo);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    font-size: 0px;
+    display: block;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &_options {
+    display: flex;
+    flex-direction: row;
+  }
+  &_buttons {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    li {
+      padding-right: 5px;
+    }
+  }
+  &_button {
+    font-family: $header-buttons-font-family;
+    color: $header-buttons-text-color;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 3px;
+    &:hover {
+      box-shadow: 0 1px 8px black;
+    }
+  }
+}

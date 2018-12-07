@@ -1,0 +1,19 @@
+$app-background-color: #eaeae1;
+$app-font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+$app-h1-color: #3a423c;
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+
+html, body {
+  height: 100%;
+  min-height: 526px;
+  font-family: $app-font-family;
+  background-color: $app-background-color;
+}
+
+h1 {
+  color: $app-h1-color;
+  font-weight: bold;
+  font-size: 3.5rem;
+}

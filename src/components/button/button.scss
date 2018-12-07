@@ -1,0 +1,15 @@
+$button-background-color: #c3ccc6;
+$button-border-color: #9fa5a1;
+$button-text-color: #3a423c;
+
+.button {
+  background-color: $button-background-color;
+  border: 2px solid $button-border-color;
+  color: $button-text-color;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 0 20px;
+  &:hover {
+    box-shadow: 0 1px 8px black;
+  }
+}

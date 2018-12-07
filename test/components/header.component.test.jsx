@@ -6,6 +6,6 @@ describe('Header Component', () => {
   test('renders the Link wrappers', () => {
     const wrapper = shallow(<Header />);
 
-    expect(wrapper.find(Link).length).toEqual(2);
+    expect(wrapper.find(Link).length).toEqual(3);
   });
 });
